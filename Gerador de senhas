@@ -1,0 +1,20 @@
+import random 
+
+
+# caracteres usados para formar senhas
+lower = 'abcdefghijklmnopqrstuvwxyz'
+upper = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
+numbers = '0123456789'
+symbols = '#@$%*-=+/.'
+
+# agrupa todos os caracteres
+all = lower + upper + numbers + symbols
+
+#define o tamanho da senha
+lenght = 8
+
+# gera a senha
+password = "".join(random.sample(all, lenght))
+
+# mostra resultado
+print(password)
